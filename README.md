@@ -5,6 +5,8 @@ Remplissez vos todo respectives
  
 * Physique
     * [ ] Créer un controleur basique
+    * [ ] Gérer les bugs GroundCheck
+    * [ ] Saisi objets
 * Enigmes
     * 
 * IA
