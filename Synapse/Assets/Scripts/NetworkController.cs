@@ -13,7 +13,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public GameObject joined;
     public InputField RoomCode = null;
     public byte MaxPlayers = 2;
-    public string sceneName = "Level";//nom de la scene à load une fois la connection à la room effectué
+    //public string sceneName = "Level";//nom de la scene à load une fois la connection à la room effectué
     
 
     private void SetState(string info)
@@ -26,6 +26,14 @@ public class NetworkController : MonoBehaviourPunCallbacks
     {
         join.SetActive(state);
         joined.SetActive(!state);
+        ///////////////////////////////////////////////////////////////////////////////////
+        ///     Il faut changer le '1' et le '4' si on ajoute des children a joined     ///
+        ///////////////////////////////////////////////////////////////////////////////////
+        if (!state)
+        {
+            joined.transform.GetChild(4).gameObject.SetActive(!PhotonNetwork.IsMasterClient);
+            joined.transform.GetChild(1).gameObject.SetActive(PhotonNetwork.IsMasterClient);
+        }
     }
     public void Start()
     {
@@ -51,9 +59,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
     {
         if(!PhotonNetwork.NickName.IsNullOrEmpty())
         {
-            string roomName = RoomCode.text;
+            string roomName = RoomCode.text.ToUpper();
             PhotonNetwork.JoinRoom(roomName);
-            ToggleEnveironement(false);
         }
         else
             SetState("Invalid Nickname (Nicknames must contain 4 characters or more).");
@@ -74,8 +81,6 @@ public class NetworkController : MonoBehaviourPunCallbacks
 
             PhotonNetwork.CreateRoom(room, options, TypedLobby.Default);
 
-            ToggleEnveironement(false);
-
             SetState("Tente de rejoindre : " + room);
         }
         else
@@ -86,6 +91,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     {
         SetState("Has joined the room");
         base.OnJoinedRoom();
+        ToggleEnveironement(false);
         //SceneManager.LoadScene("Level");
     }
 

@@ -10,16 +10,22 @@ public class Lobby : MonoBehaviourPunCallbacks
 {
     public Text[] Player = new Text[2];
     public Text RoomCode;
+
+    private void updatePlayerListUI()//pour afficher la liste des joueurs
+    {
+        int i = 0;
+        foreach (var kvp in PhotonNetwork.CurrentRoom.Players)
+        {
+            Player[i].text = kvp.Value.NickName;
+            i++;
+        }
+    }
+
     // Start is called before the first frame update
     public override void OnJoinedRoom()
     {
         RoomCode.text += PhotonNetwork.CurrentRoom.Name;
-        int i = 0;
-        foreach (var kvp  in PhotonNetwork.CurrentRoom.Players)
-        {
-            Player[i].text = kvp.Value.NickName;
-            i++;
-        }   
+        updatePlayerListUI();
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -31,12 +37,12 @@ public class Lobby : MonoBehaviourPunCallbacks
     {
         if (otherPlayer.IsMasterClient)
         {
-            Debug.Log("test1");
+            Debug.Log("MasterClient left the room");
             QuitRoom();
         }
         else
         {
-            Debug.Log("test2");
+            Debug.Log("Normal player left the room");
             int i = 0;
             foreach (var kvp in PhotonNetwork.CurrentRoom.Players)
             {
@@ -49,6 +55,7 @@ public class Lobby : MonoBehaviourPunCallbacks
     public void QuitRoom()
     {
         PhotonNetwork.LeaveRoom();
+        //updatePlayerListUI();
         SceneManager.LoadScene("Menu");
     }
     public void StartGame()
