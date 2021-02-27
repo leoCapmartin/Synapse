@@ -8,6 +8,7 @@ using WebSocketSharp;
 
 public class NetworkController : MonoBehaviourPunCallbacks
 {
+    public Lobby lobby;
     public Text Info = null;
     public GameObject join;
     public GameObject joined;
@@ -37,15 +38,20 @@ public class NetworkController : MonoBehaviourPunCallbacks
     }
     public void Start()
     {
-        if(!PhotonNetwork.InRoom)
+        if (!PhotonNetwork.IsConnected)
         {
-            PhotonNetwork.ConnectUsingSettings();
             joined.SetActive(false);
             join.SetActive(false);
             SetState("Connexion vers le serveur ...");
+            PhotonNetwork.ConnectUsingSettings();
+        }
+        else if(PhotonNetwork.InRoom)
+        {
+            ToggleEnveironement(false);
+            lobby.UpdatePlayerListUI();
         }
         else
-            ToggleEnveironement(false);
+            ToggleEnveironement(true);
     }
     public override void OnConnectedToMaster()
     {
@@ -90,9 +96,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         SetState("Has joined the room");
-        base.OnJoinedRoom();
         ToggleEnveironement(false);
-        //SceneManager.LoadScene("Level");
+        base.OnJoinedRoom();
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)

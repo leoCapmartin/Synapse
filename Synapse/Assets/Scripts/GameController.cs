@@ -3,9 +3,11 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviourPunCallbacks
 {
+    
     public Transform[] SpawnPoint = new Transform[2];
     public Text RoomName;
     void Start()
@@ -15,5 +17,11 @@ public class GameController : MonoBehaviour
 
         players[playerID].TagObject = PhotonNetwork.Instantiate("Player", SpawnPoint[playerID-1].position, SpawnPoint[playerID-1].rotation);
         RoomName.text += PhotonNetwork.CurrentRoom.Name;
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        SceneManager.LoadScene("Menu");
+        base.OnPlayerLeftRoom(otherPlayer);
     }
 }

@@ -8,56 +8,39 @@ using UnityEngine.SceneManagement;
 
 public class Lobby : MonoBehaviourPunCallbacks
 {
+    public GlobalEvents ge;
     public Text[] Player = new Text[2];
     public Text RoomCode;
 
-    private void updatePlayerListUI()//pour afficher la liste des joueurs
+    public void UpdatePlayerListUI() //pour afficher la liste des joueurs
     {
         int i = 0;
+        Player[0].text = "";
+        Player[1].text = "";
         foreach (var kvp in PhotonNetwork.CurrentRoom.Players)
         {
             Player[i].text = kvp.Value.NickName;
             i++;
         }
     }
-
-    // Start is called before the first frame update
     public override void OnJoinedRoom()
     {
         RoomCode.text += PhotonNetwork.CurrentRoom.Name;
-        updatePlayerListUI();
+        UpdatePlayerListUI();
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        Player[1].text = newPlayer.NickName;
+        UpdatePlayerListUI();
         base.OnPlayerEnteredRoom(newPlayer);
     }
+
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
-        if (otherPlayer.IsMasterClient)
-        {
-            Debug.Log("MasterClient left the room");
-            QuitRoom();
-        }
-        else
-        {
-            Debug.Log("Normal player left the room");
-            int i = 0;
-            foreach (var kvp in PhotonNetwork.CurrentRoom.Players)
-            {
-                Player[i].text = kvp.Value.NickName;
-                i++;
-            }
-        }
+        UpdatePlayerListUI();
+        base.OnPlayerLeftRoom(otherPlayer);
     }
 
-    public void QuitRoom()
-    {
-        PhotonNetwork.LeaveRoom();
-        //updatePlayerListUI();
-        SceneManager.LoadScene("Menu");
-    }
     public void StartGame()
     {
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
