@@ -27,7 +27,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
         join.SetActive(state);
         joined.SetActive(!state);
         ///////////////////////////////////////////////////////////////////////////////////
-        ///     Il faut changer le '1' et le '4' si on ajoute des children a joined     ///
+        ///     Il faut changer le '1' et le '4' si on ajoute des children a 'joined'   ///
         ///////////////////////////////////////////////////////////////////////////////////
         if (!state)
         {

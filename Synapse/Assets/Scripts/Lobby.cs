@@ -60,7 +60,7 @@ public class Lobby : MonoBehaviourPunCallbacks
     }
     public void StartGame()
     {
-        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
             SceneManager.LoadScene("Level");
         }

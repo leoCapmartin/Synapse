@@ -17,7 +17,7 @@ public class MyPlayer : MonoBehaviourPun
 
     private Vector3 _playerVelocity;
     private bool _isGrouded;
-    public Camera cam;//pour pouvoir supprimer la camera si jamais elle n'appartient pas au joueur
+    public GameObject cam;//pour pouvoir désactiver la camera si jamais elle n'appartient pas au joueur
 
     private void Start()
     {
@@ -32,12 +32,10 @@ public class MyPlayer : MonoBehaviourPun
     }
     private void Update()
     {
-        if (!photonView.IsMine)
-            Destroy(cam);
-        else
-        {
+        if (photonView.IsMine)
             Controls();
-        }
+        else if (cam.activeSelf)//si ce n'est pas notre joueur et si sa camera est activée
+            cam.SetActive(false);
     }
 
     private void Controls()
@@ -49,7 +47,6 @@ public class MyPlayer : MonoBehaviourPun
         {
             _playerVelocity.y = 0f;
         }
-
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
@@ -64,13 +61,4 @@ public class MyPlayer : MonoBehaviourPun
 
         controller.Move(_playerVelocity * Time.deltaTime);
     }
-
-    /*
-    private void Controls()
-    {
-        float vert = Input.GetAxis("Vertical");
-        float horz = Input.GetAxis("Horizontal");
-        this.transform.Translate(Vector3.forward * vert * Movespeed * Time.deltaTime);
-        this.transform.localRotation *= Quaternion.AngleAxis(horz * Turnspeed * Time.deltaTime, Vector3.up);
-    }*/
 }

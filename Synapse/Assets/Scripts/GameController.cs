@@ -10,9 +10,10 @@ public class GameController : MonoBehaviour
     public Text RoomName;
     void Start()
     {
-        int playerID = PhotonNetwork.CurrentRoom.PlayerCount;
+        int playerID = PhotonNetwork.LocalPlayer.ActorNumber;
         Dictionary<int, Player> players =  PhotonNetwork.CurrentRoom.Players;
-        players[playerID].TagObject = PhotonNetwork.Instantiate("Player", SpawnPoint[playerID - 1].position, SpawnPoint[playerID - 1].rotation);
+
+        players[playerID].TagObject = PhotonNetwork.Instantiate("Player", SpawnPoint[playerID-1].position, SpawnPoint[playerID-1].rotation);
         RoomName.text += PhotonNetwork.CurrentRoom.Name;
     }
 }
