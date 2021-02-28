@@ -38,6 +38,9 @@ public class NetworkController : MonoBehaviourPunCallbacks
     }
     public void Start()
     {
+        if (Cursor.lockState == CursorLockMode.Locked)
+            Cursor.lockState = CursorLockMode.None;
+        
         if (!PhotonNetwork.IsConnected)
         {
             joined.SetActive(false);
@@ -48,7 +51,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
         else if(PhotonNetwork.InRoom)
         {
             ToggleEnveironement(false);
-            lobby.UpdatePlayerListUI();
+            lobby.OnJoinedRoom();
         }
         else
             ToggleEnveironement(true);

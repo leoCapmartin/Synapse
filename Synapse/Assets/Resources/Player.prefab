@@ -257,7 +257,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  cam: {fileID: 6263296647213882886}
+  cam: {fileID: 6263296647213882882}
 --- !u!1 &6263296646923673384
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 6263296647213882883}
   - component: {fileID: 6263296647213882886}
   - component: {fileID: 6263296647213882885}
-  - component: {fileID: 6263296647213882884}
+  - component: {fileID: 4758869991407623851}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -314,13 +314,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6263296647213882882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1674982206834878152}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!20 &6263296647213882886
 Camera:
   m_ObjectHideFlags: 0
@@ -372,7 +372,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6263296647213882882}
   m_Enabled: 1
---- !u!114 &6263296647213882884
+--- !u!114 &4758869991407623851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,8 +381,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6263296647213882882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bcb9f55338d47944a799537a2b4a515, type: 3}
+  m_Script: {fileID: 11500000, guid: daa5e63b48cec1caba4f7ad0461ab2fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 100
   playerBody: {fileID: 1674982206834878152}
