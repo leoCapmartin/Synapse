@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/.idea.PropertyDrawers.iml
+/contentModel.xml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../../../../../../:\Users\sujet\Documents\Devoir\PROJET S2\Synapse\Synapse\Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor\PropertyDrawers\.idea\.idea.PropertyDrawers.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
