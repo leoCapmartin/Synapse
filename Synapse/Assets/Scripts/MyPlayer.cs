@@ -38,6 +38,8 @@ public class MyPlayer : MonoBehaviourPun
         {
             Controls();
         }
+
+
     }
 
     private void Controls()
