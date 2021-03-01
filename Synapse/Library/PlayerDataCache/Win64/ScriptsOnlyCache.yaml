@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - MouseLook
     - MyPlayer
     - NetworkController
+    - PauseMenu
     - PlayerNameInputField
     PhotonUnityNetworking.Editor.dll:
     - Photon.Pun.PunSceneSettings
@@ -27,10 +28,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -81,17 +80,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14458}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 14540}
+      Script: {instanceID: 11418}
     - Class: 114
-      Script: {instanceID: 14648}
+      Script: {instanceID: 11526}
     - Class: 114
-      Script: {instanceID: 15168}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 16208}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 16650}
+      Script: {instanceID: 12474}
+    - Class: 114
+      Script: {instanceID: 12538}
+    - Class: 114
+      Script: {instanceID: 12794}
+    - Class: 114
+      Script: {instanceID: 13044}
+    - Class: 114
+      Script: {instanceID: 13118}
+    - Class: 114
+      Script: {instanceID: 13442}
+    - Class: 114
+      Script: {instanceID: 13564}
+    - Class: 114
+      Script: {instanceID: 13598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -105,6 +118,8 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -150,43 +165,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14458}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 14694}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 14776}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 15088}
+      Script: {instanceID: 11970}
     - Class: 114
-      Script: {instanceID: 15168}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 12086}
     - Class: 114
-      Script: {instanceID: 15514}
+      Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 15648}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 15700}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 15896}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 15910}
+      Script: {instanceID: 12810}
     - Class: 114
-      Script: {instanceID: 16034}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 16136}
+      Script: {instanceID: 13044}
     - Class: 114
-      Script: {instanceID: 16208}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 16402}
+      Script: {instanceID: 13314}
     - Class: 114
-      Script: {instanceID: 16528}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 16572}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 16650}
+      Script: {instanceID: 13564}
     - Class: 114
-      Script: {instanceID: 16684}
+      Script: {instanceID: 13598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -233,37 +248,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14458}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 14648}
+      Script: {instanceID: 11526}
     - Class: 114
-      Script: {instanceID: 14694}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 14776}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 15118}
+      Script: {instanceID: 12000}
     - Class: 114
-      Script: {instanceID: 15168}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 15306}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 15432}
+      Script: {instanceID: 12318}
     - Class: 114
-      Script: {instanceID: 15648}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 15856}
+      Script: {instanceID: 12754}
     - Class: 114
-      Script: {instanceID: 15896}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 16136}
+      Script: {instanceID: 13044}
     - Class: 114
-      Script: {instanceID: 16208}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 16268}
+      Script: {instanceID: 13178}
     - Class: 114
-      Script: {instanceID: 16528}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 16650}
+      Script: {instanceID: 13564}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -743,6 +758,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: OnClickDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
