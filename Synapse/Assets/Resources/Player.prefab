@@ -257,6 +257,9 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
+  interactMask:
+    serializedVersion: 2
+    m_Bits: 512
   cam: {fileID: 6263296647213882882}
 --- !u!1 &6263296646923673384
 GameObject:

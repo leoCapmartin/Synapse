@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
@@ -80,31 +81,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 11418}
+      Script: {instanceID: 11964}
     - Class: 114
-      Script: {instanceID: 11526}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 12474}
+      Script: {instanceID: 13016}
     - Class: 114
-      Script: {instanceID: 12538}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 12794}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13044}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 13118}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 13976}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 14098}
     - Class: 114
-      Script: {instanceID: 13598}
+      Script: {instanceID: 14132}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -165,43 +166,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 11656}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 12514}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 12086}
+      Script: {instanceID: 12630}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12944}
     - Class: 114
-      Script: {instanceID: 12538}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 12590}
+      Script: {instanceID: 13132}
     - Class: 114
-      Script: {instanceID: 12794}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 12810}
+      Script: {instanceID: 13352}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 13478}
     - Class: 114
-      Script: {instanceID: 13044}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 13118}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 13314}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 13976}
     - Class: 114
-      Script: {instanceID: 13486}
+      Script: {instanceID: 14020}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 14098}
     - Class: 114
-      Script: {instanceID: 13598}
+      Script: {instanceID: 14132}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,37 +249,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11880}
     - Class: 114
-      Script: {instanceID: 11526}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 11656}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 12544}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 12736}
     - Class: 114
-      Script: {instanceID: 12318}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 12538}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 13296}
     - Class: 114
-      Script: {instanceID: 12794}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13044}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 13118}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 13178}
+      Script: {instanceID: 13714}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 13976}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 14098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1243,4 +1244,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level.unity
-  playerPath: C:/Users/sujet/Documents/Devoir/PROJET S2/Synapse/Synapse/build/Synapse.exe
+  playerPath: /home/leo/Documents/code/epita/Synapse/Synapse/Build/Synapse.exe
