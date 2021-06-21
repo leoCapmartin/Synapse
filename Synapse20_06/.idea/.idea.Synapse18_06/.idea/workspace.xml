@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18472ebb-abdf-4f31-8eb9-10b2c3c71bef" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interactions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GrabObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Plug.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Cable/LaunchWire.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BookInterraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/IOnFinishEnigma.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Button.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SelectionManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Puzzle/Script/DropPiece.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Puzzle/Script/DragNDrop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Clock/ClockInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LaunchQuizz.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Echec/Scripts/Echec/BasePiece.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ChessGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Echec/Scripts/Echec/PieceManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SocketInteractions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Puzzle/Script/PuzzleLauncher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/KeyInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Puzzle/Script/RewardInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Lever.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Lobby.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Quizz/scripts/QuitCanvas.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Quizz/scripts/QuizManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Puzzle/Script/GeneratePuzzle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Quizz/scripts/ChooseGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Quizz/scripts/CharadeAnswer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CauldronInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Progression.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Tableaux/scripts/generatePaintings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enigme/Tableaux/scripts/PaintingInterraction.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1u7xFnQCDbdDWD40f8tuJzMTzAN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Synapse2" />
+    <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build/test.x86_64" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18472ebb-abdf-4f31-8eb9-10b2c3c71bef" name="Default Changelist" comment="" />
+      <created>1624030329936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624030329936</updated>
+      <workItem from="1624030335063" duration="50000" />
+      <workItem from="1624030440113" duration="7678000" />
+      <workItem from="1624089282701" duration="16882000" />
+      <workItem from="1624109188349" duration="364000" />
+      <workItem from="1624110703347" duration="20864000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
